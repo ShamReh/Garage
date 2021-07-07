@@ -15,4 +15,14 @@ public class Garage {
 		this.vehicles.remove(vehicle);
 	}
 
+	public int calculatePrice() {
+		int price = 0;
+		for (Vehicle vehicle : vehicles) {
+			price += vehicle.calculate();
+		}
+
+		return price;
+
+	}
+
 }
